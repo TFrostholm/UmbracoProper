@@ -1,0 +1,17 @@
+﻿@using UmbracoProper.Features.Partials.Header.Navigation.Models
+@model List<MenuItem>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                @foreach (var item in Model)
+                {
+                    <li><a href="@item.Url">@item.Name</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>
+
+

@@ -494,6 +494,7 @@
     <Content Include="Views\ContentPage.cshtml" />
     <Content Include="Views\StartPage.cshtml" />
     <Content Include="Views\Shared\_layout.cshtml" />
+    <Content Include="Views\Partials\Header\MainNavigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3081,6 +3082,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Constants\Constants.cs" />
     <Compile Include="Features\GeneratedModelsBuilder\Base.generated.cs" />
     <Compile Include="Features\GeneratedModelsBuilder\ContentPage.generated.cs" />
     <Compile Include="Features\GeneratedModelsBuilder\File.generated.cs" />
@@ -3088,6 +3090,8 @@
     <Compile Include="Features\GeneratedModelsBuilder\Image.generated.cs" />
     <Compile Include="Features\GeneratedModelsBuilder\Member.generated.cs" />
     <Compile Include="Features\GeneratedModelsBuilder\StartPage.generated.cs" />
+    <Compile Include="Features\Partials\Header\Navigation\Controllers\NavigationController.cs" />
+    <Compile Include="Features\Partials\Header\Navigation\Models\MenuItem.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -3100,9 +3104,8 @@
   <ItemGroup>
     <Folder Include="App_Data\NuGetBackup\20170221-104209\Umbraco\" />
     <Folder Include="App_Data\NuGetBackup\20170221-104209\Umbraco_Client\" />
-    <Folder Include="Features\Partials\Header\Navigation\Controllers\" />
-    <Folder Include="Features\Partials\Header\Navigation\Models\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Navigation\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

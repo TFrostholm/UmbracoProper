@@ -19,14 +19,13 @@
     <title>Umbraco Proper</title>
 </head>
 <body>
-    <div class="page-wrap">
+<div class="container">
+    <div class="container-fluid">
         <header class="header" role="banner">
-            <div class="container">
-                
-
-            </div>
+            @Html.Action("MainNavigation", "Navigation")
         </header>
         @RenderBody()
     </div>
+</div>
 </body>
 </html>

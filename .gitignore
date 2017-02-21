@@ -240,4 +240,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
-/UmbracoProper/App_Data/Logs
+/UmbracoProper/App_Data/
