@@ -1,0 +1,9 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContentPage>
+@using ContentModels = UmbracoProper.Features.GeneratedModelsBuilder;
+@{
+    Layout = "Shared/_layout.cshtml";
+}
+
+<div class="grid">
+    @Html.GetGridHtml(Model.Content, "contentGrid")
+</div>
